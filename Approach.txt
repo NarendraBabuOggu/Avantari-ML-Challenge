@@ -1,6 +1,10 @@
 Full Name 						:	Narendra Babu Oggu
 Mail ID							:	narendrababuoggu393@gmail.com
 Link to repository for code		:	https://github.com/NarendraBabuOggu/Avantari-ML-Challenge
+Features File					:	https://drive.google.com/file/d/1-DWCnDf_ClvYcf_e-jeMQxw9grmALXpP/view?usp=sharing
+Neighbours File					:	https://github.com/NarendraBabuOggu/Avantari-ML-Challenge/blob/master/submission_neighbours.csv
+Clusters File					:	https://github.com/NarendraBabuOggu/Avantari-ML-Challenge/blob/master/image_cluster.csv
+
 
 For the Challenge I have used Python as the Main Programming Language, PyTorch to process the Images and Extract The Features and Annoy to retrieve the Neighbours based on Image Features
 
@@ -17,4 +21,3 @@ Clustering The Images :
 
 To CLuster the Images i have used the features extracted from VGG19 model and reduced them to 2 dimensional using TSNE and apllied KMeans clustering on top of reduced features
 
-  
