@@ -1,0 +1,20 @@
+Full Name 						:	Narendra Babu Oggu
+Mail ID							:	narendrababuoggu393@gmail.com
+Link to repository for code		:	https://github.com/NarendraBabuOggu/Avantari-ML-Challenge
+
+For the Challenge I have used Python as the Main Programming Language, PyTorch to process the Images and Extract The Features and Annoy to retrieve the Neighbours based on Image Features
+
+Processing The Images : 
+
+I have Created the PyTorch Dataset and DataLoader to acess the Images and used VGG19 pretrained model to extract features from Images.
+Used PyTorch Hooks to extract Features from Intermediate layers
+
+Retrieving Neighbours : 
+
+I have Built the Annoy Tree using the features extracted from VGG19 and added scripts to retrieve neighbours based on index, feature vector or Input Image
+
+Clustering The Images : 
+
+To CLuster the Images i have used the features extracted from VGG19 model and reduced them to 2 dimensional using TSNE and apllied KMeans clustering on top of reduced features
+
+  
