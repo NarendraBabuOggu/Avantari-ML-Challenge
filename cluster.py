@@ -49,6 +49,9 @@ def main(args:Callable) :
     logging.info("Applying TSNE")
     reduced_features = tsne.fit_transform(features)
 
+    save_pickle_object(reduced_features, args.tsne_path)
+    save_pickle_object(reduced_features, args.tsne_feature_path)
+
     plt.scatter(x = reduced_features[:,0], y=reduced_features[:,1])
 
     plt.savefig('tsne_plot.jpg')
@@ -74,9 +77,11 @@ def main(args:Callable) :
 if __name__ == '__main__' : 
 
     parser = argparse.ArgumentParser(prog = 'neighbours.py', description = 'Process The Arguments for neighbours.py.')
-    parser.add_argument('--feature_path', type = str, required=True, help = 'Path containing the features of all the Images saved by pickle')
+    parser.add_argument('--feature_path', type = str, required=True, help = 'Path containing the features of all the Images saved by Pickle')
     parser.add_argument('--kmeans_path', type = str, required=True, help = 'Path to save the kmeans model by pickle')
     parser.add_argument('--image_cluster_path', type = str, required=True, help = 'Path to save the image and cluster details as csv')
+    parser.add_argument('--tsne_path', type = str, required=True, help = 'Path to save TSNE Model by Pickle')
+    parser.add_argument('--tsne_feature_path', type = str, required=True, help = 'Path to save the TSNE Reuced Features by Pickle')
     
     args = parser.parse_args()
 
