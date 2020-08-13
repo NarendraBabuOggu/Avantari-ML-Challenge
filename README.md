@@ -18,3 +18,20 @@ able to find similar images</p>
 <p>    N = no. requested images</p>
 <p>Bonus points, if the provided dataset was clustered into K groups</p>
 <p>Quality of Code based on Modularity, Reusability, Maintainability, Readability</p>
+
+
+# Reproducing The Results
+
+<p>To get the Features run feature.py</p>
+<p>python feature.py --save_feature_path "features.pkl" --images_path "dataset/*.jpg" --model_name vgg</p>
+
+<p>To Build the Annoy Tree and get Neighbours for all Images run tree.py</p>
+<p>python tree.py --feature_path "features.pkl" --model_name vgg --tree_path "annoy_tree.ann" --neighbors_path "neighbors.csv" --n_neighbours 100</p>
+
+<p>To Build the Clusters from Features run cluster.py</p>
+<p>python cluster.py --feature_path "features.pkl" --kmeans_path "kmeans.pkl" --image_cluster_path 'image_cluster.csv' --tsne_path "tsne.pkl" --tsne_feature_path "tsne_reduced_features.pkl"
+  
+ <p>To get the Neighbors for New Image run neighbors.py</p>
+ <p>!python neighbors.py --feature_path "features.pkl" --image_path "dataset/1008.jpg" --tree_path "annoy_tree.ann" --model_name vgg --save_neighbours 1</p>
+ 
+ 
