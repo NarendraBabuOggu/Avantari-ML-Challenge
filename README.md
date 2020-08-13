@@ -40,10 +40,11 @@ able to find similar images</p>
 ## Neighbours Image 
 <p>First Image Represents the Query Image and Others Represent the Neighbours</p>
 
-![Image of Neighbours](https://octodex.github.com/images/yaktocat.png)
+![Image of Neighbours](grid.jpg)
 
 ## Reduced Feature Plot by TSNE
+![Image of TSNE Reduced Features](tsne_plot.jpg)
 
 ## Clusters Plot by Kmeans on Reduced Features
-
+![Image of Clusters By KMeans](cluster_plot.jpg)
 
