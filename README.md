@@ -19,6 +19,8 @@ able to find similar images</p>
 <p>Bonus points, if the provided dataset was clustered into K groups</p>
 <p>Quality of Code based on Modularity, Reusability, Maintainability, Readability</p>
 
+# COLAB
+[link to Colab!](https://colab.research.google.com/drive/1v1DTT22hSYQ1x9cwQQ3SRIEdaeRVKJTz?usp=sharing)
 
 # Reproducing The Results
 
@@ -34,4 +36,14 @@ able to find similar images</p>
  <p>To get the Neighbors for New Image run neighbors.py</p>
  <p>!python neighbors.py --feature_path "features.pkl" --image_path "dataset/1008.jpg" --tree_path "annoy_tree.ann" --model_name vgg --save_neighbours 1</p>
  
- 
+# Results
+## Neighbours Image 
+<p>First Image Represents the Query Image and Others Represent the Neighbours</p>
+
+![Image of Neighbours](https://octodex.github.com/images/yaktocat.png)
+
+## Reduced Feature Plot by TSNE
+
+## Clusters Plot by Kmeans on Reduced Features
+
+
